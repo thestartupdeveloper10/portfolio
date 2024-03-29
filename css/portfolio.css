@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Tauri&display=swap');
+
 .nav-active{
     background-color: #ECECEC;
 }
@@ -12,6 +15,9 @@ body{
   box-sizing: border-box;
   background-color:#ECECEC ;
   position: relative;
+}
+h1{
+  font-family: 'Outfit',sans-serif;
 }
 hero-image{
     object-fit: cover;
