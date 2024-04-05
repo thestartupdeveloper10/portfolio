@@ -1,9 +1,9 @@
 gsap.registerPlugin(ScrollTrigger);
 
 ScrollTrigger.create({
-    // markers:true,
     trigger:"first-section",
     start:"4% 16%",
+    end:"bottom bottom",
     toggleClass:{targets:"header",className:"nav-active"},
 })
 const timeline=gsap.timeline()
@@ -19,17 +19,11 @@ timeline.from(".details-project",{y:-10,opacity:0})
 
 
 const tl=gsap.timeline({
-    // duration:1,
     scrollTrigger:{
         trigger:".about-tl",
         start:"top 90%",
         end:"50% 50%",
-        // end:()=>`+=${document.querySelector(".about-tl").offsetHeight}`,
         toggleActions:"play none none none",
-        // scrub:4,
-        // pin:".square",
-        // pinSpacing:true,
-        // markers:true,
     },
 })
 
@@ -41,17 +35,11 @@ tl.from(".passion-tag",{x:-10,opacity:0})
     
     
     const project_tl=gsap.timeline({
-        // duration:1,
         scrollTrigger:{
             trigger:".new_projects",
             start:"top 80%",
             end:"bottom 50%",
-            // end:()=>`+=${document.querySelector(".about-tl").offsetHeight}`,
             toggleActions:"play none none none",
-            //scrub:4,
-            // pin:".square",
-            // pinSpacing:true,
-            markers:true,
         },
     })
     
@@ -64,17 +52,11 @@ tl.from(".passion-tag",{x:-10,opacity:0})
 
 
          const contact_tl=gsap.timeline({
-                    // duration:1,
                     scrollTrigger:{
                         trigger:".just_contact",
                         start:"top 80%",
                         end:"bottom 50%",
-                        // end:()=>`+=${document.querySelector(".about-tl").offsetHeight}`,
                         toggleActions:"play none none none",
-                        //scrub:4,
-                        // pin:".square",
-                        // pinSpacing:true,
-                        markers:true,
                     },
              })
         contact_tl.from(".contact_tag",{opacity:0})
