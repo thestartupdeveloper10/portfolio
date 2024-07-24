@@ -79,7 +79,7 @@
     <div class="home absolute lg:top-0 right-[150px] w-72 h-72 bg-pink-300 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-4000"></div>
         <div class=" grid grid-rows-[auto,auto,15%] grid-cols-1 md:grid-cols-2 xl:grid-cols-2 gap-4 h-full xl:h-screen">
        
-            <main class=" flex flex-col justify-evenly">
+            <main class=" flex flex-col justify-evenly h-screen">
                 <div class="writings h-auto w-auto flex flex-col xl:mt-[50px] gap-5 z-10 sm:gap-3 justify-evenly ">
                     <h1
                         class="text-[#474787] cliffe  text-[.975rem] font-[400px] leading-[.25rem] tracking-[.2em] sm:text-[.875rem] md:text-[.775rem] sm:font-[400px] md:font-[300px] font-sans sm:leading-[.25rem] md:leading-[.15rem] sm:tracking-[.4em] md:tracking-[.3em]">
@@ -88,7 +88,7 @@
                         class="lg:text-[3.875rem]  text-[2.125rem] font-extrabold lg:leading-[4.0625rem] leading-[2.5rem] lg:py-2 text-[#2C2C54] big-text">
                         Tech Enthusiast & Software Developer</h1>
                     <p
-                        class="text-[#AAABB8]  lg:font-medium lg:text-[1.200rem] text-[1.175rem] md:text-[1.275rem] md:text-left lg:tracking-normal front-paragraph">
+                        class="text-[#AAABB8]  lg:font-medium lg:text-[1.200rem] text-[1.175rem] md:text-[1.075rem] md:text-left lg:tracking-normal front-paragraph">
                         I'm a passionate tech enthusiast specializing in software development, UX/UI design. I thrive on pushing boundaries, crafting elegant code, designing intuitive experiences, and driving impactful strategies. Let's embark on a journey of creativity and innovation together!</p>
                     <div class="flex details-project"> <a href="#projects"
                             class="hover:underline font-bold sm:text-[1.125rem] text-[#474787]">View Projects </a>
@@ -280,6 +280,25 @@
               <!-- grid -->
               <div class=" min-h-max items-center justify-center md:mt-[100px] lg:mt-[150px]">
                 <div class="grid grid-cols-1 gap-14 lg:grid-cols-2 ">
+                  <div class="watchspot group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
+                    <div class="h-[580px] w-full">
+                      <img class="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125" src="https://cdn.pixabay.com/photo/2013/01/05/14/18/watches-73936_960_720.jpg" alt="Luxury Watch" />
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
+                    <div class="absolute inset-0 flex md:translate-y-[60%] flex-col items-center justify-center md:mb-[50px] px-9 text-center md:transition-all md:duration-500 md:group-hover:translate-y-0">
+                      <h1 class="font-dmserif text-3xl font-bold text-[#ECECEC] underline">Royal Watches</h1>
+                      <p class="mb-3 mt-3 text-lg italic text-[#f9f6ee] md:text-[#AAABB8] md:opacity-0 md:transition-opacity md:duration-300 md:group-hover:opacity-100">
+                        Discover our latest luxury watch collection, featuring exquisite craftsmanship and timeless design. Elevate your style with our curated selection of high-end timepieces.
+                        <br />Tech Stack: React for frontend development, Node.js for server-side operations, MongoDB for database management.
+                      </p>
+                      <a href="https://royalwatcheske.onrender.com/" target="_blank">
+                        <button class="btn bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-700 transition duration-300">
+                          Explore Collection
+                        </button>
+                      </a>
+                    </div>
+                  </div>
+                  
                   <div class="osasuna group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/30">
                     <div class="h-[580px] w-full">
                       <img class="h-full w-full object-cover transition-transform duration-500 group-hover:rotate-3 group-hover:scale-125" src="./img/football-1419954_1280.jpg" alt="" />
